@@ -1,0 +1,5 @@
+About inheritance in general
+https://www.php.net/manual/en/language.oop5.inheritance.php
+
+Use parent:: to access overriden method from child class
+Read more here https://docstore.mik.ua/orelly/webprog/pcook/ch07_08.htm

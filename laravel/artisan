@@ -1,0 +1,11 @@
+Migrations:
+php artisan make:migration create_tablename    -   create migration
+php artisan schema:dump      -       squash migrations
+php artisan migrate - run migration
+
+Seeders:
+docs https://laravel.com/docs/8.x/seeding
+php artisan make:seeder NameSeeder (for example FlightSeeder)     -    create seeder
+php artisan db:seed --class=FlightSeeder        -        run seeder
+
+

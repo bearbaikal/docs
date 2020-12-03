@@ -1,0 +1,11 @@
+select host, user from mysql.user;  -  show list of users
+desc mysql.user;   -   show fields in users table
+create user 'admin'@'localhost' identified by 'pass'  -   create new user
+alter user 'admin'@'localhost' identified by 'new-passord-here'   -    change password for user
+
+grant all privileges on *.* to 'admin'@'localhost'   -   grant all priveleges for all databases(*) and all tables (*) for certain user
+show grants for 'username'@'hostname'     -    show privileges for certain user
+
+drop user 'username'@'hostname'    -   remove certain user
+
+select user();      -       show current logged in user

@@ -1,0 +1,6 @@
+2020/12/01
+The conslusions I got after learning laravel docs for two days:
+- It's possible to create migrations without model, and create database table (for example)
+  using this migration
+- It's possible to create seed without migration, seed works independently from migration
+ 

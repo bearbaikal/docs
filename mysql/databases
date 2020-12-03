@@ -1,0 +1,5 @@
+show databases;  -   show all databases
+create database dbname;   -   create database
+grant all privileges on dbname.* to 'username'@'hostname'   -    grant all priveleges for all tables (*) for certain database for certain user
+
+

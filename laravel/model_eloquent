@@ -1,0 +1,14 @@
+https://laravel.com/docs/8.x/eloquent
+Summary:
+I. Configure model
+   - Manual naming database table ($table), primary key column ($primaryKey), 
+   - Don't increment primary key or don't use numeric key ($incrementing = false),
+     primary should be string ($keyType = 'string')
+   - Don't need timestamps columns by default ($timestamps = false),
+     change format of timestamps ($dateFormat),
+     customize names of timestamps columns (const CREATED_AT, UPDATED_AT)
+   - Change default database connection to custom ($connection = 'connection-name'
+   - Default values for some attributes ($attributes)
+II. Retrieving model
+   - Using call shorten call like App\Models\ModelName::all() is possible in closure in routes file (web.php),
+     but in controller it couses error becouse of incorrect namespace
