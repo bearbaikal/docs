@@ -1,0 +1,9 @@
+Article at https://nuxtjs.org/docs/2.x/features/file-system-routing
+
+Nuxt generates dinamic routes structure from file system, it's called "File system routing" in NUXT.
+The main thing I should understand is nuxt takes file system structure and generate ~/.nuxt/routes.json
+from it. That's all!
+
+Other part of routing is how nuxt-link generates links!
+To specify route params with nuxt-link I should use params property of nuxt-link "to" attribute.
+Example is here https://stackoverflow.com/questions/46396291/how-to-set-data-into-nuxt-js-next-link

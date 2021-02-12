@@ -1,0 +1,7 @@
+git reset HEAD@{1} - 
+Если после reset, Вы ничего не делали - его можно отменить, выполнив git reset HEAD@{1}
+
+Если что то делали, то следуйте совету 
+https://qna.habr.com/q/183993
+
+git checkout HEAD - возврат после detached
