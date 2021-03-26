@@ -1,0 +1,19 @@
+Вариант 1
+---
+Для того, чтобы определить, что страница была перезагружена (стор инициализировался)
+достаточно в сторе создать спец. переменную для этого, например loaded: false
+А потом проверять инициализировался ли стор через эту переменную, например, для выбора выдачи значения из localstorage или из стора уже
+Актуально для выдачи токена, запомненного в localstorage
+
+Вариант 2
+---
+Также можно сделать мутацию initializeStore, которую вызвать из метода beforeCreate (по статье https://medium.com/js-dojo/how-to-permanently-save-data-with-vuex-localstorage-in-your-vue-app-f1d5c140db69)
+И в мутации проверять
+if (process.browser) {
+  state.token2 = window.localStorage.getItem('client_token')
+}
+в таком духе. В статье пишут if (localStorage.getItem), но у меня это не сработало, т.к. нода в консоле матерится [Vue warn]: Error in beforeCreate hook: "ReferenceError: localStorage is not defined"   
+А в браузере приложение просто не загружается с ошибкой localStorage is not defined
+Так что я думаю в статье совет не проверенный в этом плане.
+А так подход работает и в mounted при нём через console.log уже выводится нормально значение state из стора подгруженное из localStorage
+Чего не происходит с использованием vuex-persist, к сожалению

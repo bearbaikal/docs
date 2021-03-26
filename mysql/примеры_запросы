@@ -1,0 +1,2 @@
+#Выборка повторяющихся строк по одному из столбцов, где количество повторений задано числом
+select * from tth_matrix where naimenovanie in (SELECT naimenovanie from tth_matrix GROUP by naimenovanie HAVING count(*) > 1) order by naimenovanie
