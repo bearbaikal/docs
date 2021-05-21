@@ -1,0 +1,11 @@
+General
+https://laravel.com/docs/8.x/authentication
+
+Look at section "Authentication Quickstart" for quickstart
+I installed Jetstream with inertia.js (work based on Vue.js), it gives auth forms, database migration for authenticate, register users
+from the installation.
+
+Protecting routes section says about creating middleware for specific route.
+
+Section Authenticate A User Instance describe how to manualy login user with command  
+
